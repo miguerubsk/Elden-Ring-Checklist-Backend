@@ -1,0 +1,313 @@
+.blue-tag {
+  background-color: #8d99ae;
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blue-tag:hover {
+  background-color: #5c677d;
+}
+
+.empty {
+  margin: 10px;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+}
+
+/* Dashboard */
+
+/* Estilo para o body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Estilo para o título */
+.sitetitle {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2em;
+  color: #2b2d42;
+}
+
+/* Nav */
+
+nav {
+  background-color: #1d1d1d;
+  color: white;
+  margin-top: -2%;
+  padding: 10px 0;
+  font-size: 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffa500;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav button {
+  background-color: #470097;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #3d0084;
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1em;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+#chiara {
+  text-decoration: none;
+  color: #ffa500;
+}
+
+#laura {
+  text-decoration: none;
+  color: #ffa500;
+}
+
+#leandro {
+  text-decoration: none;
+  color: #ffa500;
+}
+
+/* body */
+
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.blue-tag {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue-tag:hover {
+  background-color: #ff6600;
+}
+
+.blue-tag h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blue-tag p {
+  font-size: 16px;
+  margin: 0;
+}
+
+button {
+  margin: 20px 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3d0084;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.loginform {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.loginform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginform label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loginform input[type="text"],
+.loginform input[type="password"],
+.loginform select {
+  padding: 10px;
+  margin: 5px 0px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+} 
+
+.loginform button {
+  padding: 10px;
+  margin: 10px 0px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2b2d42;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginform button:hover {
+  background-color: #1e1f2b;
+}
+
+.register {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.register input[type="text"],
+.register input[type="number"],
+.register input[type="password"],
+.register select {
+  padding: 10px;
+  margin: 5px 0px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+}
+
+.register button {
+  padding: 10px;
+  margin: 10px 0px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2b2d42;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register button:hover {
+  background-color: #1e1f2b;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.sidebar {
+  background-color: #1d1d1d;
+  color: #fff;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.testtextrn {
+  color: #000;
+}
+
+.rulecreation {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.wrapper p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

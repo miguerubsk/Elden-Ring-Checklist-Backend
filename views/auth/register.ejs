@@ -1,0 +1,66 @@
+<%- include('../partials/header') %>
+<%- include('../partials/nav') %>
+
+<div class="register">
+  <form id="register-form">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required/>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required/>
+
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="pass" required/>
+
+    <button>Register</button>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('register-form');
+  const uErr = document.querySelector('.username.error');
+  const eErr = document.querySelector('.email.error');
+  const pErr = document.querySelector('.pass.error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    uErr.textContent = '';
+    eErr.textContent = '';
+    pErr.textContent = '';
+
+    const username = form.username.value;
+    const email = form.email.value;
+    const pass = form.pass.value;
+
+    try {
+      const response = await fetch('/auth/register', {
+        method: 'POST',
+        body: JSON.stringify({
+          username,
+          email,
+          pass
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+
+      if (data.errs) {
+        uErr.textContent = data.errs.username;
+        eErr.textContent = data.errs.email;
+        pErr.textContent = data.errs.pass;
+      }
+
+      if (data.user) {
+        location.assign('/dashboard');
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  });
+</script>
+
+<%- include('../partials/footer') %>
